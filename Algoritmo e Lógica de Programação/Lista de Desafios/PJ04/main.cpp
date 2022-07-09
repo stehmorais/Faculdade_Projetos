@@ -8,7 +8,7 @@ int prato, sobremesa, bebida, calorias;
 
 calorias=0; 
 
-    cout << " ESCOLHA SUA REFEIÇÃO \n"; 
+    cout << " ESCOLHA SUA REFEIÃ‡ÃƒO \n"; 
 
     cout << "==================================OPCOES DE PRATO====================================== \n"; 
 
@@ -98,7 +98,7 @@ calorias=0;
 
     cout << "|                                                                                     | \n"; 
 
-    cout << "|.1 Cha --- .2 Suco de Laranja --- .3 Suco de Melão --- .4 Refrigerante Diet          | \n";  
+    cout << "|.1 Cha --- .2 Suco de Laranja --- .3 Suco de MelÃ£o --- .4 Refrigerante Diet          | \n";  
 
     cout << "|                                                                                     | \n"; 
 
@@ -134,7 +134,7 @@ calorias=0;
 
 	} 
 
- 	cout <<"A soma das suas calorias é " << calorias <<endl; 
+ 	cout <<"A soma das suas calorias Ã©: " << calorias <<endl; 
 
      
 	return 0; 
