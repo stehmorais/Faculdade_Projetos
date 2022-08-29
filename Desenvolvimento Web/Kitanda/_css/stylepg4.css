@@ -1,0 +1,34 @@
+body {
+    background-color: rgb(221, 118, 59)
+}
+
+li {
+    font-size: larger;
+}
+
+h3 {
+    font-size: x-large;
+}
+
+table {
+    margin-top: 15px;
+    border: solid 5px blue;
+    border-radius: 8px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+td {
+    border-bottom: solid 1px rgb(0, 0, 0);
+    background-color: rgb(250, 214, 160);
+}
+
+tr:hover {
+    font-weight: bold;
+}
+
+
+th {
+    background: #ffffff;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+}
