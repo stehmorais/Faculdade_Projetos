@@ -1,3 +1,0 @@
-<-----Calculadora de calorias----->
-1° Usuário escolhe suas refeições 
-2° é calculado o total de calorias da refeição

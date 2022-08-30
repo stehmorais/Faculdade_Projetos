@@ -1,7 +1,0 @@
-
-Desafio:
-
-A série de Fibonacci é uma sequência de termos que tem como os 2 primeiros termos,
-respectivamente, os números 0 e 1. A partir daí, os demais termos são formados
-seguindo uma certa regra. A série de Fibonacci pode ser vista a seguir:
-0 1 1 2 3 5 8 13 21...
