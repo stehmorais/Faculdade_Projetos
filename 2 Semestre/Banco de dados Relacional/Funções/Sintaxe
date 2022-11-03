@@ -1,0 +1,25 @@
+```sql
+delimiter $$
+CREATE OR REPLACE FUNCTION Calc_NF(idpedido INT) RETURNS FLOAT
+	BEGIN
+		
+		DECLARE  total_pedido FLOAT;
+		DECLARE 	totaL_nf FLOAT;
+		DECLARE 	valor_icms FLOAT;
+		
+		
+		SELECT SUM(i.quantidade * i.precounitario) INTO total_pedido
+		FROM item i
+		WHERE i.idpedido = idpedido;
+		
+	
+		SET valor_icms = (SELECT calc_icms(18, total_pedido));
+		
+		SET total_nf = total_pedido + valor_icms; 
+		RETURN total_nf;
+	
+END $$
+delimiter ;
+
+SELECT calc_nf(1);
+```
