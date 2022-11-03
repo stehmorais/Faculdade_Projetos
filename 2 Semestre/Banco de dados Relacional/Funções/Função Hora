@@ -1,0 +1,13 @@
+elimiter $$
+CREATE OR REPLACE FUNCTION hello(texto CHAR(20)) RETURNS CHAR(50)
+BEGIN
+	DECLARE mensagem VARCHAR(30);
+	SET mensagem = CONCAT('Hello, ',texto,'! ');
+	if CURTIME() > "18:00:00"
+		then SET mensagem = CONCAT(mensagem, 'Boa Noite ');
+		else SET mensagem = CONCAT(mensagem, 'Bom dia ');
+	END IF;
+	RETURN mensagem;
+END $$
+delimiter ;
+SELECT hello('Ester ')
