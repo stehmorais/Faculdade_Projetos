@@ -1,11 +1,12 @@
 delimiter $$
-CREATE OR REPLACE FUNCTION soma(n1 FLOAT, n2 FLOAT) RETURNS FLOAT
+CREATE OR REPLACE FUNCTION calc_icms(icms FLOAT, valor FLOAT) RETURNS FLOAT 
 BEGIN
 	DECLARE resultado FLOAT;
-	SET resultado = n1 + n2;
+	
+	SET resultado = valor * icms / 100;
 	RETURN resultado;
 
 END $$
 delimiter ;
-SELECT soma(5,10);
-// retorno 15
+SELECT calc_icms(18,1000);
+// retorno 18.000
