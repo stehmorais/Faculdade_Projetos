@@ -1,11 +1,9 @@
 delimiter $$
-CREATE OR REPLACE FUNCTION soma(n1 FLOAT, n2 FLOAT) RETURNS FLOAT
+CREATE OR REPLACE FUNCTION maior_salario(ncargo VARCHAR(40)) RETURNS FLOAT 
 BEGIN
-	DECLARE resultado FLOAT;
-	SET resultado = n1 + n2;
-	RETURN resultado;
-
+	RETURN (SELECT MAX(salario) FROM empregado WHERE cargo = ncargo);
+	
 END $$
 delimiter ;
-SELECT soma(5,10);
-// retorno 15
+SELECT maior_salario('ENGENHEIRO');
+// retorno 18.000
