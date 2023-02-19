@@ -100,7 +100,13 @@ print(list(r))
 r = range(1,15,2)
 print(list(r))
 
-#desafio
+#desafio - se o resultado da subtração dos dois numeros for negativo, retorna 0 se não, retorna o valor da subtração
+
+def caixinha_magica3(numb, numb2):
+    if numb - numb2 > 1: 
+        return numb - numb2
+    else:
+        return 0
 
 assert caixinha_magica3(20, 15) == 5
 assert caixinha_magica3(20, 10) == 10
@@ -108,5 +114,5 @@ assert caixinha_magica3(10, 10) == 0
 assert caixinha_magica3(10, 15) == 0
 assert caixinha_magica3(30, 45) == 0
 
-print(caixinha_magica3(50 , 30))
-print(caixinha_magica3(20 , 30))
+print(caixinha_magica3(30 , 45))
+
