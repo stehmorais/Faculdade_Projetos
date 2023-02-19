@@ -24,7 +24,7 @@ Meus projetos desenvolvidos durante o curso superior tecnólogo de Desenvolvimen
 - Gestão ágil de projetos de software - Ana Célia <br/>
 - Banco de Dados - Não relacional - Thiago <br/>
 - Interação Humano Computador - Leonardo <br/>
-- Técnica de programação II - Orlando <br/>
+- Técnica de programação II - Esdras <br/>
 - Inglês I - <br/>
-- Desenvolvimento Web III - Esdras <br/>
+- Desenvolvimento Web III - Orlando <br/>
 - Álgebra Linear - João <br/>
